@@ -8,9 +8,13 @@ PASOS A SEGUIR:
 
 Al descargar el proyecto desde el repositorio, tendrán que hacer una serie de pasos para que funcione correctamente la app. Aqui se describen los pasos a pasos con sus respetivos comandos:
 
-- Cuando su proyecto esté en su local, deberá ejecutar las migraciones para la creación de la Base de Datos y de la tabla. Si desea puede ir al archivo .env para modificar el nombre de la base de datos y el usuario que tenga en su entorno local. Luego de haber echo las modificaciones deberá ejecutar las migraciones con el comando: php artisan migrate
+- Desde la terminal de comandos debe estar en la carpeta del proyecto para poder realizar las siguientes ejecuciones.
 
-- Luego de tener su Base de datos, deberá ejecutar y actualizar los paquetes que tenga por ello se sugiere ejecutar: npm install
+- Se deberá ejecutar y actualizar los paquetes que tenga por ello se sugiere ejecutar: "composer install" y "npm install"
+
+- En el archivo .env.example debe modificarse a .env y se ejecuta "php artisan key:generate" para generar la key de Laravel.
+
+- Cuando su proyecto esté en su local, deberá ejecutar las migraciones para la creación de la Base de Datos y de la tabla. Si desea puede ir al archivo .env para modificar el nombre de la base de datos y el usuario que tenga en su entorno local. Luego de haber echo las modificaciones deberá ejecutar las migraciones con el comando: php artisan migrate
 
 - Despues de esto, Es probable que deba ejecutar el comando "npm run build" para que sus archivos js y css queden listos para utilizar.
 
