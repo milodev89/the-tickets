@@ -1,66 +1,31 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
+<h2>The Tickets Project</h2>
+
+<p>
+Este proyecto esta realizado con el Framwork Laravel de PHP, así mismo utilicé el Framework de Javascript Vuejs, dos frameworks que trabajan de la mano para optimizar y mejorar procesos al momento de desarrollar proyectos.
+
+PASOS A SEGUIR:
+
+Al descargar el proyecto desde el repositorio, tendrán que hacer una serie de pasos para que funcione correctamente la app. Aqui se describen los pasos a pasos con sus respetivos comandos:
+
+- Cuando su proyecto esté en su local, deberá ejecutar las migraciones para la creación de la Base de Datos y de la tabla. Si desea puede ir al archivo .env para modificar el nombre de la base de datos y el usuario que tenga en su entorno local. Luego de haber echo las modificaciones deberá ejecutar las migraciones con el comando: php artisan migrate
+
+- Luego de tener su Base de datos, deberá ejecutar y actualizar los paquetes que tenga por ello se sugiere ejecutar: npm install
+
+- Despues de esto, Es probable que deba ejecutar el comando "npm run build" para que sus archivos js y css queden listos para utilizar.
+
+- Como se está utilizando el framework Laravel, se sugiere que se ejecute el comando "php artisan serve" con ello arrancará el servidor que monta la aplicación en Laravel.
+
+- Con estos pasos anteriores debería quedar funcionando la app.
+
+USO DE LA APP:
+
+- El sistema inicia con una pagina Home que mostrará todos los tickets creados. En la parte superior a la derecha, se encuentran las opciones de Login y Register las cuales son necesarias para ingresar como tal al dashboard del usuario.
+
+- En Register se hace el registro del Usuario, y al momento de hacerlo lo redirige al Dashboard del Usuario, donde podrá ver la lista de tickets creados por él y tambien tendrá la opción de crear un nuevo Ticket con el boton "Create ticket".
+
+- En la lista de Tickets por usuario puede hacer filtro y paginación, el filtro funciona para estados y nombre de ticket unicamente. También cada ticket tiene un par de opciones, son "Edit" y "Delete", estas funcionan para tener un CRUD completo.
+
+- Si el usuario quiere volver al Home de la app, no solo verá los tickets suyos si no lo que los demás han creado.
+
 </p>
-
-## About Laravel
-
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
-
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
-
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
-
-## Learning Laravel
-
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
-
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
-
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
-
-## Laravel Sponsors
-
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
-
-### Premium Partners
-
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
